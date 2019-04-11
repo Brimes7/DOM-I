@@ -39,4 +39,112 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent['nav']["img-src"])
+//NavBar COLOR GREEN
+let nav = document.getElementsByTagName('a')[0];
+nav.innerText = siteContent['nav']['nav-item-1'];
+nav.style.color = 'green';
+
+let navii = document.getElementsByTagName('a')[1];
+navii.innerText = siteContent['nav']['nav-item-2'];
+navii.style.color = 'green';
+
+let naviii = document.getElementsByTagName('a')[2];
+naviii.innerText = siteContent['nav']['nav-item-3'];
+naviii.style.color = 'green';
+
+let naviv = document.getElementsByTagName('a')[3];
+naviv.innerText = siteContent['nav']['nav-item-4'];
+naviv.style.color = 'green';
+
+let navv = document.getElementsByTagName('a')[4];
+navv.innerText = siteContent['nav']['nav-item-5'];
+navv.style.color = 'green';
+
+let navvi = document.getElementsByTagName('a')[5];
+navvi.innerText = siteContent['nav']['nav-item-6'];
+navvi.style.color = 'green';
+
+//Header AREA
+let varH1 = document.getElementsByTagName('h1')[0];
+varH1.innerText = siteContent['cta']['h1'];
+//Button Area
+let varButton = document.getElementsByTagName('button')[0];
+varButton.innerText = siteContent['cta']['button'];
+
+//Images
+let varImg = document.getElementsByTagName('img')[1];
+varImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//Features and about
+
+let FH4 = document.getElementsByTagName('h4')[0];
+FH4.innerText = siteContent['main-content']['features-h4'];
+
+let fContent = document.getElementsByTagName('p')[0];
+fContent.innerText = siteContent['main-content']['features-content']
+
+let AH4 = document.getElementsByTagName('h4')[1];
+AH4.innerText = siteContent['main-content']['about-h4'];
+
+let aContent = document.getElementsByTagName('p')[1];
+aContent.innerText = siteContent['main-content']['about-content'];
+
+//Middle IMG
+let mImg = document.getElementsByTagName('img')[2];
+mImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+//Services, Products and Vision Area
+
+let SH4 = document.getElementsByTagName('h4')[2];
+SH4.innerText = siteContent['main-content']['services-h4'];
+
+let sContent = document.getElementsByTagName('p')[2];
+sContent.innerText = siteContent['main-content']['services-content'];
+
+let PH4 = document.getElementsByTagName('h4')[3];
+PH4.innerText = siteContent['main-content']['product-h4'];
+
+let pContent = document.getElementsByTagName('p')[3];
+pContent.innerText = siteContent['main-content']['product-content'];
+
+let VH4 = document.getElementsByTagName('h4')[4];
+VH4.innerText = siteContent['main-content']['vision-h4'];
+
+let vContent = document.getElementsByTagName('p')[4];
+vContent.innerText = siteContent['main-content']['vision-content'];
+
+
+//CONTACT Area
+
+let cH4 = document.getElementsByTagName('h4')[5];
+cH4.innerText = siteContent['contact']['contact-h4'];
+
+let address = document.getElementsByTagName('p')[5];
+address.innerText = siteContent['contact']['address'];
+
+let phone = document.getElementsByTagName('p')[6];
+phone.innerText = siteContent['contact']['phone'];
+
+let email = document.getElementsByTagName('p')[7];
+email.innerText = siteContent['contact']['email'];
+
+//Footer
+let CR = document.getElementsByTagName('p')[8];
+CR.innerText = siteContent['footer']['copyright'];
+
+//APPEND & PrePend
+
+let nBar = document.querySelector('nav')
+
+let FAQ = document.createElement('a');
+FAQ.style.color = 'green';
+FAQ.innerText = "FAQ";
+FAQ.setAttribute('href', '0')
+nBar.appendChild(FAQ);
+
+
+let Testimonials = document.createElement('a');
+Testimonials.style.color = 'green';
+Testimonials.innerText = "Testimonials";
+Testimonials.setAttribute('href', '1')
+nBar.prepend(Testimonials);
