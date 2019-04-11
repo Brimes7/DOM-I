@@ -131,3 +131,20 @@ email.innerText = siteContent['contact']['email'];
 //Footer
 let CR = document.getElementsByTagName('p')[8];
 CR.innerText = siteContent['footer']['copyright'];
+
+//APPEND & PrePend
+
+let nBar = document.querySelector('nav')
+
+let FAQ = document.createElement('a');
+FAQ.style.color = 'green';
+FAQ.innerText = "FAQ";
+FAQ.setAttribute('href', '0')
+nBar.appendChild(FAQ);
+
+
+let Testimonials = document.createElement('a');
+Testimonials.style.color = 'green';
+Testimonials.innerText = "Testimonials";
+Testimonials.setAttribute('href', '1')
+nBar.prepend(Testimonials);
